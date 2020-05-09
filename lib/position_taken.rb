@@ -1,8 +1,11 @@
 # code your #position_taken? method here!
 board = [" "," "," "," "," "," "," "," "," "]
-index = 0
+def index(user_input)
+  user.to_i - 1
+end
+
 def position_taken?(board,index = "X")
-  if index == "X" || index == "O"
+  if index == 0 || index == 8
     return true
   elsif board[index] == "X"
     return true
