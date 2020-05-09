@@ -7,8 +7,6 @@ end
 def position_taken?(board,index = "X")
   if board[index] == "X"
     return true
-  elsif user_input - 1 == "X"
-    return true
   else board[index] == " " || "" || nil
     return false
   end
