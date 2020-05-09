@@ -5,9 +5,7 @@ def index(user_input)
 end
 
 def position_taken?(board,index = "X")
-  if index == 0 || index == 8
-    return true
-  elsif board[index] == "X"
+  if board[index] == "X"
     return true
   else board[index] == " " || "" || nil
     return false
